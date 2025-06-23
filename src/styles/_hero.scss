@@ -1,0 +1,52 @@
+.hero {
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: url(../images/fundo.png);
+    background-repeat: no-repeat; //faz a imagem nao repetir
+    background-size: cover; //faz a imagem ocupar o maximo do container
+    position: relative; //faz o 'before' funcionar somente no header
+
+    @media (max-width:640px) {
+        padding: 40px 0;
+
+        &__logo {
+            height: 40px;
+        }
+
+        &__text{
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
+    }
+
+    .container {
+        position: relative; //para que o container fique por cima do hero e apareça
+    }
+
+    &::before { //fundo preto com opacidade
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        content: ''; //é necesario um content (mesmo vazio) 
+        opacity: 0.6; //opacidade
+    }
+
+    &__text {
+        margin-top: 64px;
+        margin-bottom: 64px;
+        font-size: 40px;
+        line-height: 56px;
+        font-weight: 800; //negrito
+        text-align: center; //centraliza ne 
+    }
+
+    &__logo {
+        display: block; // foi necessario colocar o display block para centralizar verticalmente
+        margin: 0 auto; //centraliza horizontamente
+        height: 80px;
+    }
+}

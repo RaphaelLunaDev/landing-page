@@ -1,3 +1,5 @@
+@use '../variables';
+
 .button {
     padding: 12px;
     font-size: 18px;
@@ -6,8 +8,8 @@
     text-align: center;
     white-space: nowrap; // força o texto ficar toda na mesma linha
     &--primary {
-        color: #fff;
-        background-color: #4F2AC3;
+        color: variables.$textColor;
+        background-color: variables.$purple;
     }
 
     @media (max-width: 640px) {

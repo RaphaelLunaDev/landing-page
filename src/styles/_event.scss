@@ -1,8 +1,33 @@
+@use 'variables';
+
 .event {
     padding: 80px 0;
-    background-image: linear-gradient(#1B6CA7, #442BDB);    //degrade muito foda de cores (na vertical)
+
+    &--frontend{
+            background-image: linear-gradient(variables.$blue1, variables.$blue2);    //degrade muito foda de cores (na vertical)
+    }
+
+    &--ux-ui{
+            background-image: linear-gradient(variables.$blue2, variables.$pink);    //degrade muito foda de cores (na vertical)
+    }
+
+    &--data-science{
+            background-image: linear-gradient(variables.$pink, variables.$yellow);    //degrade muito foda de cores (na vertical)
+    }
+
+    &--backend{
+            background-image: linear-gradient(variables.$yellow, variables.$pink);    //degrade muito foda de cores (na vertical)
+    }
+
+    &--image-left{
+        .container{
+            flex-direction: row-reverse;       //invertel para que a imagem venha primeiro (mto foda tbm)
+        }
+    }
+
     .container{
         display: flex;
+        gap: 40px;
     }
 
     &__image {
@@ -10,8 +35,6 @@
     }
 
     &__details{
-        margin-right: 40px;
-
         &__title{
             margin-bottom: 16px;
             font-size: 18px;

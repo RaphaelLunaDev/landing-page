@@ -1,6 +1,8 @@
+@use '../variables';
+
 .infos-bar {
     padding: 16px 24px;
-    background-color: #fff;
+    background-color: variables.$textColor;
     display: flex;
     justify-content: space-between; //faz os items irem pra extrema direita e esquerda
 
@@ -11,11 +13,11 @@
 
         &__item {
             font-size: 14px;
-            color: black;
+            color: variables.$secondaryTextColor;
             b {
                 font-size: 18px;
                 display: block; // o "b" vem com display inline naturalmente
-                color: #000;
+                color: variables.$secondaryTextColor;
             }
             
         }

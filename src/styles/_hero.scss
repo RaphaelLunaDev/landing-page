@@ -3,10 +3,11 @@
 .hero {
     padding-top: 64px;
     padding-bottom: 100px;
-    background-image: url(../images/fundo.png);
-    background-repeat: no-repeat; //faz a imagem nao repetir
-    background-size: cover; //faz a imagem ocupar o maximo do container
+    background-image: url(../images/AN_Hunter-x-Hunter.jpg);
+    background-repeat: no-repeat; //faz a imagem nao repetir //faz a imagem ocupar o maximo do container
     position: relative; //faz o 'before' funcionar somente no header
+    background-size: cover;
+
 
     .container {
         position: relative; //para que o container fique por cima do hero e apareça
@@ -35,14 +36,18 @@
     &__logo {
         display: block; // foi necessario colocar o display block para centralizar verticalmente
         margin: 0 auto; //centraliza horizontamente
-        height: 80px;
+        height: 200px;
+        border-radius: 8px;
     }
 
         @media (max-width:640px) {
-        padding: 40px 0;
-
+            background-image: url(../images/wallpaper-mobile.jpg);
+        background-repeat: no-repeat; //faz a imagem nao repetir //faz a imagem ocupar o maximo do container
+        background-size: cover;
+            padding: 40px 0;
         &__logo {
-            height: 40px;
+            border-radius: 10px;
+            height: 260px;
         }
 
         &__text{

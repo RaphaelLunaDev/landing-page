@@ -25,12 +25,16 @@
 
     @media (max-width:640px) {
         display: block;
-
+        border-radius: 8px;
         &__infos {
             display: block;
-
+            
             &__item {
                 margin-bottom: 24px;
+
+                b {
+                    margin-bottom: 7px;
+                }
             }
         }
     }

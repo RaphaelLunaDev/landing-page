@@ -4,6 +4,10 @@
 @use 'event';
 @use 'variables';
 
+html, body {
+  overflow-x: hidden;      // ou clip       ///AAAAAAAAAEEEEEEEEEEEEEE TIROU O BUG CHATO DO MOBILE
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -18,9 +22,9 @@
     width: 100%;
     margin: 0 auto; //centraliza horizontamente
 
-    @media (max-width: 640px) {
-        max-width: 80%;
-    }
+    @media(max-width:640px){
+        width: 90%;
+}
 
     @media (max-width: 1024px) {
         max-width: 90%;

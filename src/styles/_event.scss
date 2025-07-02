@@ -4,19 +4,19 @@
     padding: 80px 0;
 
     &--frontend{
-            background-image: linear-gradient(variables.$blue1, variables.$blue2);    //degrade muito foda de cores (na vertical)
+            background-image: linear-gradient(variables.$gray, variables.$blue);    //degrade muito foda de cores (na vertical)
     }
 
     &--ux-ui{
-            background-image: linear-gradient(variables.$blue2, variables.$pink);    //degrade muito foda de cores (na vertical)
+            background-image: linear-gradient(variables.$blue, variables.$blue);    //degrade muito foda de cores (na vertical)
     }
 
     &--data-science{
-            background-image: linear-gradient(variables.$pink, variables.$yellow);    //degrade muito foda de cores (na vertical)
+            background-image: linear-gradient(variables.$blue, variables.$dark-blue);    //degrade muito foda de cores (na vertical)
     }
 
     &--backend{
-            background-image: linear-gradient(variables.$yellow, variables.$pink);    //degrade muito foda de cores (na vertical)
+            background-image: linear-gradient(variables.$dark-blue, variables.$black);    //degrade muito foda de cores (na vertical)
     }
 
     &--image-left{
@@ -35,15 +35,25 @@
     }
 
     &__details{
+
+        b {
+            color: black;
+        }
+        
         &__title{
             margin-bottom: 16px;
             font-size: 18px;
             font-weight: bold;
+
         }
 
         &__description{
             font-size: 16px;
             line-height: 22px;
+
+            &--dark{
+                color: black;
+            }
         }
     }
 

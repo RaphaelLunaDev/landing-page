@@ -1,6 +1,6 @@
     AOS.init();
 
-    const dataDoEvento = new Date("Dec 24, 2025 19:00:00");  //definição da data do timer
+    const dataDoEvento = new Date("May 05, 2026 19:00:00");  //definição da data do timer
     const timeStampDoEvento = dataDoEvento.getTime(); //recuperação do time stamp (sla oq é isso kkkkkkk)
 
     const contaAsHoras = setInterval(function() {       //constante com intervalos para a cada 1000 milesegundos(1s) aumentar 1  
